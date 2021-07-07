@@ -54,10 +54,10 @@ async function getWeather(latitude, longitude) {
 }
 
 (function displayGreeting() {
-	greeting.textContent = (hours >= 6 && hours <= 12) ? 'Good Morning Denys' : 
-						   (hours >= 12 && hours <= 18) ? 'Good Afternoon Denys' : 
-						   (hours >= 18 && hours <= 23) ? 'Good Evening Denys' : 
-						   (hours >= 0 && hours <= 6) ? 'Good Night Denys' : 'Good Evening Denys';
+	greeting.textContent = (hours >= 5 && hours <= 12) ? 'Good Morning Denys' : 
+				(hours >= 12 && hours <= 18) ? 'Good Afternoon Denys' : 
+				(hours >= 18 && hours <= 23) ? 'Good Evening Denys' : 
+				(hours >= 0 && hours <= 5) ? 'Good Night Denys' : 'Good Evening Denys';
 }());
 
 function displayWeather() {
